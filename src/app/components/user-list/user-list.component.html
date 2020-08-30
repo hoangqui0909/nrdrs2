@@ -1,0 +1,15 @@
+<table class="table table-responsive">
+<tr>
+<th>Name</th>
+<th>Discription</th>
+<th>Require</th>
+
+</tr>
+<tbody>
+<tr *ngFor="let user of filteredUsers | filter: searchByKeyword: 'name'">
+<td>{{ user.name}}</td>
+<td>{{ user.discription}}</td>
+<td>{{ user.require}}</td>
+</tr>
+</tbody>
+</table>
